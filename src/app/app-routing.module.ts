@@ -22,6 +22,7 @@ const routes: Routes = [
     canActivate: [authGuard],
   },
   { path: 'cart', component: CartComponent, canActivate: [authGuard] },
+  { path: 'allorders', redirectTo: 'home', pathMatch: 'full' },
   { path: 'brands', component: BrandsComponent, canActivate: [authGuard] },
   { path: 'login', component: LoginComponent },
   // { path: 'resetPass', component: ResetPasswordComponent },
